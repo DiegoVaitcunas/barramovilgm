@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background: lightgray;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+    background-color: #1f2029;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+    max-width: 100%;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 260px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("/FotoPaginaGaita/CHEVROLET.jpeg");
+    transform: rotateY(  0deg) translateZ(300px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("/FotoPaginaGaita/COMBI2.jpeg");
+      transform: rotateY( 40deg) translateZ(300px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("/FotoPaginaGaita/COMBI1.jpeg");
+    transform: rotateY( 80deg) translateZ(300px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("/FotoPaginaGaita/CHEVROLET2.jpeg");
+    transform: rotateY(120deg) translateZ(300px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("/FotoPaginaGaita/FORD1.jpeg");
+   transform: rotateY(160deg) translateZ(300px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("/FotoPaginaGaita/FORD2.jpeg");
+   transform: rotateY(200deg) translateZ(300px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("/FotoPaginaGaita/NUESTROSEVENTOS6.jpeg");
+   transform: rotateY(240deg) translateZ(300px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("/FotoPaginaGaita/fusca1.jpeg");
+    transform: rotateY(280deg) translateZ(300px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("/FotoPaginaGaita/OTRAS2.jpeg");
+    transform: rotateY(320deg) translateZ(300px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+  /* Estilo para el título h1 */
+h1 {
+    text-align: center; /* Centrar el texto */
+    font-size: 2em; /* Tamaño de fuente */
+    margin-top: 60px; /* Espacio superior para separarlo del carrusel */
+    color: #fffffff2; /* Color de texto (cambia #333 al color que desees) */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    text-shadow: 2px 2px 4px rgba(188, 188, 188, 0.881); /* Sombra de texto */
+}
+
+/* Estilo para el botón "Volver al Menú Principal" */
+.volver-btn {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  right: 10px; /* Ajusta la distancia desde la derecha según sea necesario */
+  padding: 10px 20px;
+  background-color: #000; /* Color de fondo negro */
+  color: #fff; /* Color del texto blanco */
+  text-decoration: none;
+  font-size: 14px; /* Tamaño de la letra aumentado */
+  border-radius: 25px; /* Bordes redondeados */
+  border: 2px solid #fff; /* Borde blanco */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.volver-btn:hover {
+  background-color: #444; /* Fondo gris oscuro al pasar el mouse */
+  color: #ffcc00; /* Color del texto dorado al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.volver-btn:active {
+  transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+}
+
+h1 {
+  margin-top: 2.5cm; /* Agrega el margen superior deseado (5 cm en este caso) */
+}
+
+@media (max-width: 768px) { /* Estilos para pantallas más pequeñas (típicamente dispositivos móviles) */
+  .container {
+    max-width: 100%; /* Ajusta el ancho máximo para dispositivos móviles */
+  }
+  .Frame {
+    width: 150px; /* Ajusta el ancho para dispositivos móviles más pequeños */
+    height: 120px; /* Ajusta la altura para dispositivos móviles más pequeños */
+  }
+  .carousel__face {
+    width: 140px; /* Ajusta el ancho para dispositivos móviles más pequeños */
+    height: 110px; /* Ajusta la altura para dispositivos móviles más pequeños */
+  }
+}
+
+.Frame {
+  width: 180px; /* Ajusta el ancho deseado para dispositivos móviles */
+  height: 160px; /* Ajusta la altura deseada para dispositivos móviles */
+}
+.carousel__face {
+  width: 160px; /* Ajusta el ancho deseado para dispositivos móviles */
+  height: 140px; /* Ajusta la altura deseada para dispositivos móviles */
+}
+
