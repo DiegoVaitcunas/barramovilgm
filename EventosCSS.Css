@@ -44,31 +44,31 @@ body {
   
   
   .carousel__face:nth-child(1) {
-    background-image: url("/FotoPaginaGaita/CHEVROLET.jpeg");
+    background-image: url("./FotoPaginaGaita/CHEVROLET.jpeg");
     transform: rotateY(  0deg) translateZ(300px); }
   .carousel__face:nth-child(2) { 
-    background-image: url("/FotoPaginaGaita/COMBI2.jpeg");
+    background-image: url("./FotoPaginaGaita/COMBI2.jpeg");
       transform: rotateY( 40deg) translateZ(300px); }
   .carousel__face:nth-child(3) {
-    background-image: url("/FotoPaginaGaita/COMBI1.jpeg");
+    background-image: url("./FotoPaginaGaita/COMBI1.jpeg");
     transform: rotateY( 80deg) translateZ(300px); }
   .carousel__face:nth-child(4) {
-    background-image: url("/FotoPaginaGaita/CHEVROLET2.jpeg");
+    background-image: url("./FotoPaginaGaita/CHEVROLET2.jpeg");
     transform: rotateY(120deg) translateZ(300px); }
   .carousel__face:nth-child(5) { 
-    background-image: url("/FotoPaginaGaita/FORD1.jpeg");
+    background-image: url("./FotoPaginaGaita/FORD1.jpeg");
    transform: rotateY(160deg) translateZ(300px); }
   .carousel__face:nth-child(6) { 
-    background-image: url("/FotoPaginaGaita/FORD2.jpeg");
+    background-image: url("./FotoPaginaGaita/FORD2.jpeg");
    transform: rotateY(200deg) translateZ(300px); }
   .carousel__face:nth-child(7) { 
-    background-image: url("/FotoPaginaGaita/NUESTROSEVENTOS6.jpeg");
+    background-image: url("./FotoPaginaGaita/NUESTROSEVENTOS6.jpeg");
    transform: rotateY(240deg) translateZ(300px); }
   .carousel__face:nth-child(8) {
-    background-image: url("/FotoPaginaGaita/fusca1.jpeg");
+    background-image: url("./FotoPaginaGaita/fusca1.jpeg");
     transform: rotateY(280deg) translateZ(300px); }
   .carousel__face:nth-child(9) {
-    background-image: url("/FotoPaginaGaita/OTRAS2.jpeg");
+    background-image: url("./FotoPaginaGaita/OTRAS2.jpeg");
     transform: rotateY(320deg) translateZ(300px); }
   
   
@@ -109,7 +109,7 @@ h1 {
 
 .volver-btn:hover {
   background-color: #444; /* Fondo gris oscuro al pasar el mouse */
-  color: #ffcc00; /* Color del texto dorado al pasar el mouse */
+  color: #fff; /* Color del texto dorado al pasar el mouse */
   transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
 }
 

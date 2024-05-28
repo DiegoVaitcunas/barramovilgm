@@ -142,7 +142,7 @@ h1 {
   
   .volver-btn:hover {
 	background-color: #444; /* Fondo gris oscuro al pasar el mouse */
-	color: #ffcc00; /* Color del texto dorado al pasar el mouse */
+	color: #fff; /* Color del texto dorado al pasar el mouse */
 	transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
   }
   
